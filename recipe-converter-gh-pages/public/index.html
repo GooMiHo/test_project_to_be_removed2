@@ -4,51 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
-    <link href="./src/index.css" type="text/css" rel="stylesheet">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-
-    <title>Recipe Converter</title>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
   </head>
   <body>
-    <div id="banner">
-        <div class="header">
-        </div>
-    </div>
-    <div class="transparent-background">
-        <p class="pink-orange-background">This recipe converter lets you convert recipes using grams into cups, tablespoons, and teaspoons.  To use, first enter the type of ingredient you wish convert from grams to cups. Follow that with the amount the recipe calls for in grams. When you are ready to
-            add the ingredient to your converted recipe list, push the add button.</p>
-    </div>
-    <br />
-    <div class="margin">
-        <h2>Enter ingredients (in grams):</h2>
-        <form>
-            <span class="blue-green ing-and-grams">ingredient:</span><input type="text" list="ingredientList" id="enteredIngredient" class="input-boxes">
-             <datalist id="ingredientList">
-             </datalist>
-             <span class="blue-green more-space ing-and-grams">grams:</span><input type="number" id="gramsOfIng" class="input-boxes"><input type="button" id="pressed-button" value="Add" />
-         </form>
-         <br />
-         <br />
-         <div class="list-paper">
-             <h2 id="ingredient-list">New ingredients list (in cups)
-                 <input type="button" id="add-list-button" value="Add To Recipe"/>
-             </h2>
-             <div id="root"></div>
-        </div>
-         <form action:"mailto:{document.getElementById(email-address).innerHTML}" method="post" enctype="text/plan">
-             E-mail:<br />
-             <input type="text" id="email-address" name="email" class="input-boxes">
-             <br />
-             <br />
-             <div id="recipe-card">
-                 <div id="root2"></div>
-                 <div id="root3"></div>
-                 <textarea placeholder="enter recipe here" id="full-recipe" "full-recipe"></textarea>
-            </div>
-        </form>
-    </div>
-    <script async src="App.js"></script>  <!-- Check to see it async works and/or makes page load faster-->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   </body>
 </html>
