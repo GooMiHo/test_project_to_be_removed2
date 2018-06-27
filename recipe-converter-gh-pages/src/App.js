@@ -3,8 +3,19 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('root')
-);
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          Hello <code>src/App.js</code>.
+        </p>
+      </div>
+    );
+  }
 }
+
+export default App;
