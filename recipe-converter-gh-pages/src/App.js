@@ -2,7 +2,7 @@
 
 import React from 'react';
 import logo from './logo.svg';
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import './App.css';
 import {ingrArray} from './ingredient-conv-chart';
 
