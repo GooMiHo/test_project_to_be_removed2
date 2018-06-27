@@ -1,6 +1,6 @@
 {
   "name": "recipe-converter-gh-pages",
-  "homepage": "https://goomiho.github.io/recipe-converter",
+  "homepage": "https://goomiho.github.io/recipe-converter/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
