@@ -264,18 +264,18 @@ function addNewItem(wordToFind, amountToConvert) {
         let keyId = 'item_' + i;
         let keyId2 = 'item2_' + i;
         let myButton = <button id="remove-button" onClick={event => removeElement(keyId, keyId2)}>remove</button>;
-        return <li key={keyId} id={keyId} className="theList">{item} {myButton}</li>;
+        return <li key={keyId} id={keyId} className="theList">{item} {myButton}<li>;
     });
-    ReactDOM.render(<ul>{recipeLis}</ul>, document.getElementById('root'));
+    ReactDOM.render(<ul>{recipeLis}<ul>, document.getElementById('root'));
 }
 
 document.getElementById("add-list-button").addEventListener("click", function() {
     const recipeLis2 = itemsAndAmounts.map((item, i) => {
         let keyId2 = 'item2_' + i;
-        return <li key={keyId2} id={keyId2}>{item}</li>;
+        return <li key={keyId2} id={keyId2}>{item}<li>;
     });
-    ReactDOM.render(<h1 id="recipe-ingredients">Ingredients:</h1>, document.getElementById('root2'));
-    ReactDOM.render(<ul id="theList2Ul">{recipeLis2}</ul>, document.getElementById('root3'));
+    ReactDOM.render(<h1 id="recipe-ingredients">Ingredients:<h1>, document.getElementById('root2'));
+    ReactDOM.render(<ul id="theList2Ul">{recipeLis2}<ul>, document.getElementById('root3'));
 });
 
 
